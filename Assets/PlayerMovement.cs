@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
     public float forwardForce = 2000f;
@@ -12,11 +12,11 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(sidewayForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
