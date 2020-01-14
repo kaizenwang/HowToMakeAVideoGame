@@ -5,6 +5,7 @@
         "**/.DS_Store": true,
         "**/*.meta": true,
         "**/*.*.meta": true,
+        "**/*.physicMaterial": true,
         "**/*.unity": true,
         "**/*.unityproj": true,
         "**/*.mat": true,
