@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelComplete : MonoBehaviour
+public class Menu : MonoBehaviour
 {
-    public void LoadNextLevel()
-    {
+    public void startGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

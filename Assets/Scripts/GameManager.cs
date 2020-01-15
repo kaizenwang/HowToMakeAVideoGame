@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
     void Restart(){
-       EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().name); 
+       SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
 }
